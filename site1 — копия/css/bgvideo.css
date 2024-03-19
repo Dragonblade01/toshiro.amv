@@ -1,0 +1,49 @@
+
+
+
+
+.bgvideo {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgvideo video {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* если вилое переполняет контейнерЮто остальное обрезается и центруется */
+    object-fit: cover;
+    /* видимо положение,показ поверх экрана */
+    z-index: 1;
+    /* может положение вверх */
+}
+
+.effect {
+    .bgvideo video {
+        width: 100%;
+        height: 70vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* если вилое переполняет контейнерЮто остальное обрезается и центруется */
+        object-fit: cover;
+        /* видимо положение,показ поверх экрана */
+        z-index: 2;
+        /* может положение вверх */
+
+        /* а это мы затемнили видео при помощи пустого дива */
+        background-color: #0000000b;
+    }
+}
+
+
+.video-text {
+    color: aquamarine;
+    z-index: 2;
+}

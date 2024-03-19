@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=IM Fell French Canon&display=swap');
+
+
+
+
+body{
+    background: radial-gradient(#9a71f9 36%, #62adf3 95%);
+    font-family: IM Fell French Canon, serif;
+}
+
+p {
+    color: aquamarine;
+}
+
+.nav-link {
+    color: aquamarine;
+}
+.navbar-nav .nav-link.active{
+    color: rgb(166, 166, 166);
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+
+.navbar-toggler{
+    background-color: grey;
+}
+
+.sidebar{
+    color: aquamarine;
+    background: radial-gradient(#c4acfb 36%, #62adf3 95%);
+
+}
+
+.card{
+    background: radial-gradient(#c4acfb 36%, #62adf3 95%);
+    color: aquamarine;
+}
+
+.card a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.slide-text{
+    color: aquamarine;
+    margin: auto auto;
+}
+
+.footer-text{
+    color: aquamarine;
+}
+
+footer, .btn-outline-primary{
+    background: linear-gradient(#9a71f9 36%, #62adf3 95%);
+
+}
+
+
+/* animation */
+.call-anim {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+/* animation */
+.media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* медиа запросы чтоб этих кнопок нижних не было видно */
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
